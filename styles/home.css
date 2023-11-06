@@ -49,16 +49,31 @@
 }
 
 @media(max-width:768px) {
-    .home {
-        background-image: url(../img/background-tablet.png);
-        background-position: right top;
-    }
+    @media(max-width:768px){
 
-    .conteudo-container {
-        flex-direction: column-reverse;
-    }
-
-    .destaque-container {
-        display: none;
-    }
-}
+        .home{
+            background-image: url(/img/background-tablet.png);
+            background-position: right top;
+        }
+        
+        .conteudo-container{
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+        
+        .conteudo-container div{
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
+        .conteudo-container .texto{
+            justify-content: center;
+            height: 300px;
+        }
+        
+        .destaque-container{
+            display: none;
+        }
+        
+        
+        }
